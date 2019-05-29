@@ -15,6 +15,7 @@ spec:
       labels:
         app: guestbook
         version: "1.0"
+        razee/watch-resource: "lite"
     spec:
       containers:
       - name: guestbook
@@ -28,6 +29,7 @@ metadata:
   name: guestbook
   labels:
     app: guestbook
+    razee/watch-resource: "lite"
 spec:
   ports:
   - port: 3000
