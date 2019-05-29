@@ -18,7 +18,21 @@ spec:
     spec:
       containers:
       - name: guestbook
-        image: ibmcom/guestbook:v2
+        image: ibmcom/guestbook:v1
         ports:
         - name: http-server
           containerPort: 3000
+apiVersion: v1
+kind: Service
+metadata:
+  name: guestbook
+  labels:
+    app: guestbook
+spec:
+  ports:
+  - port: 3000
+    targetPort: http-server
+    nodePort: 31999
+  selector:
+    app: guestbook
+  type: NodePort
