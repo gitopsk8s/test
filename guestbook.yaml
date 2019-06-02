@@ -29,7 +29,7 @@ metadata:
   name: guestbook
   labels:
     app: guestbook
-    razee/watch-resource: "lite"
+    razee/watch-resource: "detail"
 spec:
   ports:
   - port: 3000
