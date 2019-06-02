@@ -15,7 +15,7 @@ spec:
       labels:
         app: guestbook
         version: "1.0"
-        razee/watch-resource: "lite"
+        razee/watch-resource: "detail"
     spec:
       containers:
       - name: guestbook
